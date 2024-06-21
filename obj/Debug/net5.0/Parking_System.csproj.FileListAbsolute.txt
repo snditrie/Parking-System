@@ -1,0 +1,15 @@
+/home/enigma/Documents/summary/test-project/Parking_System/bin/Debug/net5.0/Parking_System
+/home/enigma/Documents/summary/test-project/Parking_System/bin/Debug/net5.0/Parking_System.deps.json
+/home/enigma/Documents/summary/test-project/Parking_System/bin/Debug/net5.0/Parking_System.runtimeconfig.json
+/home/enigma/Documents/summary/test-project/Parking_System/bin/Debug/net5.0/Parking_System.runtimeconfig.dev.json
+/home/enigma/Documents/summary/test-project/Parking_System/bin/Debug/net5.0/Parking_System.dll
+/home/enigma/Documents/summary/test-project/Parking_System/bin/Debug/net5.0/Parking_System.pdb
+/home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net5.0/Parking_System.GeneratedMSBuildEditorConfig.editorconfig
+/home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net5.0/Parking_System.AssemblyInfoInputs.cache
+/home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net5.0/Parking_System.AssemblyInfo.cs
+/home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net5.0/Parking_System.csproj.CoreCompileInputs.cache
+/home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net5.0/Parking_System.dll
+/home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net5.0/refint/Parking_System.dll
+/home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net5.0/Parking_System.pdb
+/home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net5.0/Parking_System.genruntimeconfig.cache
+/home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net5.0/ref/Parking_System.dll

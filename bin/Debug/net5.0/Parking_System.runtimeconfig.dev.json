@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/enigma/.dotnet/store/|arch|/|tfm|",
+      "/home/enigma/.nuget/packages"
+    ]
+  }
+}
