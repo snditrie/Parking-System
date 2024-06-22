@@ -48,15 +48,15 @@ status
 ```bash
 type_of_vehicles <vehicle>
 ```
-### Show Registration No. By Odd Plate
+### Show Registration Number By Odd Plate
 ```bash
 registration_numbers_for_vehicles_with_odd_plate
 ```
-### Show Resgistration No. By Even Plate
+### Show Resgistration Number By Even Plate
 ```bash
 registration_numbers_for_vehicles_with_event_plate
 ```
-### Show Resgistration No. By Color
+### Show Resgistration Number By Color
 ```bash
 registration_numbers_for_vehicles_with_color <color>
 ```
@@ -64,7 +64,7 @@ registration_numbers_for_vehicles_with_color <color>
 ```bash
 slot_numbers_for_vehicles_with_color <color>
 ```
-### Show Slot Number By Registration No.
+### Show Slot Number By Registration Number
 ```bash
 slot_number_for_registration_number <registrationNo>
 ```
