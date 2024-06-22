@@ -58,11 +58,11 @@ registration_numbers_for_vehicles_with_event_plate
 ```
 ### Show Resgistration No. By Color
 ```bash
-registration_numbers_for_vehicles_with_colour <color>
+registration_numbers_for_vehicles_with_color <color>
 ```
 ### Show Slot Number By Color
 ```bash
-slot_numbers_for_vehicles_with_colour <color>
+slot_numbers_for_vehicles_with_color <color>
 ```
 ### Show Slot Number By Registration No.
 ```bash
