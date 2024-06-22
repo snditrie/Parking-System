@@ -12,3 +12,4 @@
 /home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net6.0/Parking_System.pdb
 /home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net6.0/Parking_System.genruntimeconfig.cache
 /home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net6.0/ref/Parking_System.dll
+/home/enigma/Documents/summary/test-project/Parking_System/obj/Debug/net6.0/Parking_System.sourcelink.json

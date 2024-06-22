@@ -40,11 +40,11 @@ namespace parking_system
                     case "registration_numbers_for_vehicles_with_event_plate":
                         GetVehiclesByEvenPlate(command);
                         break;
-                    case "registration_numbers_for_vehicles_with_colour":
-                        GetVehiclesByColour(command);
+                    case "registration_numbers_for_vehicles_with_color":
+                        GetVehiclesByColor(command);
                         break;
-                    case "slot_numbers_for_vehicles_with_colour":
-                        GetSlotsByColour(command);
+                    case "slot_numbers_for_vehicles_with_color":
+                        GetSlotsByColor(command);
                         break;
                     case "slot_number_for_registration_number":
                         GetSlotByRegistrationNumber(command);
@@ -65,13 +65,13 @@ namespace parking_system
         class Vehicle
         {
             public string RegistrationNumber { get; }
-            public string Colour { get; }
+            public string Color { get; }
             public string Type { get; }
 
-            public Vehicle(string registrationNumber, string colour, string type)
+            public Vehicle(string registrationNumber, string color, string type)
             {
                 RegistrationNumber = registrationNumber;
-                Colour = colour;
+                Color = color;
                 Type = type;
             }
         }
@@ -114,7 +114,7 @@ namespace parking_system
                 }
 
                 string registrationNumber = command[1];
-                string colour = command[2];
+                string color = command[2];
                 string type = command[3];
                 
                 if (!IsValidVehicleType(type))
@@ -123,7 +123,7 @@ namespace parking_system
                     return;
                 }
 
-                parkingLot.Add(slotNumber, new Vehicle(registrationNumber, colour, type));
+                parkingLot.Add(slotNumber, new Vehicle(registrationNumber, color, type));
                 Console.WriteLine($"Allocated slot number: {slotNumber}");
             }
             else
@@ -148,10 +148,10 @@ namespace parking_system
 
         static void GetParkingStatus()
         {
-            Console.WriteLine("Slot No.  Type    Registration No  Colour");
+            Console.WriteLine("Slot No.  Type    Registration No.  Color");
             foreach (var kvp in parkingLot)
             {
-                Console.WriteLine($"{kvp.Key,-8} {kvp.Value.Type,-7} {kvp.Value.RegistrationNumber,-15} {kvp.Value.Colour}");
+                Console.WriteLine($"{kvp.Key,-9} {kvp.Value.Type,-7} {kvp.Value.RegistrationNumber,-17} {kvp.Value.Color}");
             }
         }
 
@@ -176,10 +176,10 @@ namespace parking_system
             Console.WriteLine(string.Join(", ", evenPlates));
         }
 
-        static void GetVehiclesByColour(string[] command)
+        static void GetVehiclesByColor(string[] command)
         {
-            string colour = command[1];
-            var vehicles = parkingLot.Where(v => v.Value.Colour.Equals(colour, StringComparison.OrdinalIgnoreCase))
+            string color = command[1];
+            var vehicles = parkingLot.Where(v => v.Value.Color.Equals(color, StringComparison.OrdinalIgnoreCase))
                 .Select(v => v.Value.RegistrationNumber);
             if (vehicles.Count() == 0)
             {
@@ -190,10 +190,10 @@ namespace parking_system
             Console.WriteLine(string.Join(", ", vehicles));
         }
 
-        static void GetSlotsByColour(string[] command)
+        static void GetSlotsByColor(string[] command)
         {
-            string colour = command[1];
-            var slots = parkingLot.Where(v => v.Value.Colour.Equals(colour, StringComparison.OrdinalIgnoreCase))
+            string color = command[1];
+            var slots = parkingLot.Where(v => v.Value.Color.Equals(color, StringComparison.OrdinalIgnoreCase))
                 .Select(v => v.Key.ToString());
             if (slots.Count() == 0)
             {
@@ -237,11 +237,11 @@ namespace parking_system
             int mobil = parkingLot.Count(v => v.Value.Type.Equals("Mobil", StringComparison.OrdinalIgnoreCase));
             Console.WriteLine($"Number of Mobil vehicles: {mobil}");
 
-            var colours = parkingLot.GroupBy(v => v.Value.Colour)
-                .Select(v => new { Colour = v.Key, Count = v.Count() });
-            foreach (var colour in colours)
+            var colors = parkingLot.GroupBy(v => v.Value.Color)
+                .Select(v => new { Color = v.Key, Count = v.Count() });
+            foreach (var color in colors)
             {
-                Console.WriteLine($"Number of {colour.Colour} vehicles: {colour.Count}");
+                Console.WriteLine($"Number of {color.Color} vehicles: {color.Count}");
             }
         }
         
